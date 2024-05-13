@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Boleto</title>
+    <link rel="stylesheet" href="qrcode.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="esquerda">
+                <img src="../scr/2.png" alt="Logo da Sua Empresa" style="width: 70px;">
+                <img src="../scr/4.png" alt="nome img" style="width: 300px;">
+            </div>
+            <a href="../login/login.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+                    <path fill-rule="evenodd"
+                        d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                </svg></a>
+    </header>
+    <main>
+        <div class="card main-card">
+            <div class="img">
+                <img height="400px" width="400px" src="../scr/pixqrcode.png" alt="" class="card-image">
+            </div>
+            <form action="../material/material.html#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <button type="submit">Comfirmar Pagamento</button>
+
+            </form>
+
+
+        </div>
+
+
+</body>
+
+</html>
